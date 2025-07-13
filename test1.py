@@ -1,4 +1,4 @@
-x = 110
+x = 117
 x1 = x
 z = []
 z.append(x)
@@ -10,9 +10,9 @@ for i in range(4):
 	z.append(y)
 	z1[x] = y
 	if i!=3:
-		x = (x+sum([i+(x1*0.15) for i in z[1:]]))/(i+2)
+		x = (x+sum([i+(i*0.10) for i in z[1:]]))/(i+2)
 		#print(x)
 	else:
 		break
-print(x1*0.15)
+print(z[1]*0.10)
 print(z1)
